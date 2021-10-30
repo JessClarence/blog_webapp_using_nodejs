@@ -1,0 +1,10 @@
+<%- include('partials/header.ejs'); -%>
+
+    <% posts.forEach(e => { %>
+        <h1><%= e.title %></h1>
+        <p class="justify-content"><%= e.text.slice(0, 100) %> ... <a href="/posts/<%=e.title%>">Read More</a> </p>
+        <hr>
+<% }) %>
+    
+
+<%- include('partials/footer.ejs'); -%>
